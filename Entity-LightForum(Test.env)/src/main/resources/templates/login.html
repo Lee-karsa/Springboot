@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Login</title>
+<!--  <base href="../static/">-->
+  <meta name="robots" content="noindex, follow" />
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+  <!-- CSS
+  ============================================ -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+
+  <!-- Icon Font CSS -->
+  <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/vendor/flaticon.css">
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="assets/css/plugins/slick.css">
+
+  <!-- Main Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <!-- Header Logo Start -->
+      <div class="col">
+        <div class="header-logo">
+          <a><img src="assets/images/logo/logo-light.png" alt="Site Logo"></a>
+        </div>
+      </div><!-- Header Logo End -->
+      <!-- Header Links Start -->
+      <div class="header-links col-auto order-lg-3">
+        <a href="#" data-toggle="modal" data-target="#loginSignupModal" data-target-sub="#login">Login</a>
+        <span>or</span>
+        <a href="#" data-toggle="modal" data-target="#loginSignupModal" data-target-sub="#signup">Sign up</a>
+      </div><!-- Header Links End -->
+      <!-- Header Menu Start -->
+      <nav id="main-menu" class="main-menu col-lg-auto order-lg-2">
+      </nav>
+      <!-- Header Menu End -->
+    </div>
+  </div>
+</header>
+
+<div class="loginSignupModal modal fade" id="loginSignupModal" tabindex="-1" role="dialog" aria-labelledby="loginSignupModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <ul class="loginSignupNav nav">
+          <li><a class="nav-link active" data-toggle="tab" href="#login">Login</a></li>
+          <li><a class="nav-link" data-toggle="tab" href="#signup">Sign up</a></li>
+        </ul>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      </div>
+      <div class="modal-body">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="login">
+            <form action="/login">
+              <div class="row mb-n3">
+                <div class="col-12 mb-3"><input type="email" name="email" id="email" placeholder="Email"></div>
+                <div class="col-12 mb-3"><input type="password" name="password" id="password" placeholder="Password"></div>
+                <div class="col-12 mb-3">
+                  <div class="row justify-content-between mb-n2">
+                    <div class="col-auto mb-2">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" name="remember-me" id="remember-me" value="checkedValue" class="custom-control-input">
+                        <label class="custom-control-label" for="remember-me">Remember me</label>
+                      </div>
+                    </div>
+                    <div class="col-auto mb-2"><a href="#">Forgot Password?</a></div>
+                  </div>
+                </div>
+                <div class="col-12 mb-3"><input class="btn btn-primary w-100" type="submit" value="Login"></div>
+              </div>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="signup">
+            <form action="/register">
+              <div class="row mb-n3">
+                <div class="col-12 mb-3"><input type="text" placeholder="Your Name"></div>
+                <div class="col-12 mb-3"><input type="email" placeholder="Your Email Address"></div>
+                <div class="col-12 mb-3"><input type="password" placeholder="Choose a Password"></div>
+                <div class="col-12 mb-3"><input type="password" placeholder="Confirm Password"></div>
+                <div class="col-12 mb-3"><input class="btn btn-primary w-100" type="submit" value="Sign Up"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slider Section Start -->
+<div class="slider-section section">
+  <div class="slide-item bg-parallax" data-bg-image="assets/images/slider/slider-1.jpg" data-overlay="50">
+    <div class="container">
+      <div class="slider-content text-center">
+        <h2 class="title">揭开 技术的 ‘话匣子’</h2>
+        <p>Saying technology that you desire.</p>
+        <p>created by lee</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Funfact Section Start -->
+<div class="section section-padding bg-parallax" data-bg-image="assets/images/bg/bg-1.jpg" data-overlay="50">
+  <div class="container">
+    <div class="funfact-wrap row">
+
+      <!-- Funfact Start -->
+      <div class="funfact col-md-3 col-sm-6 col-12">
+        <span class="counter">1354</span>
+        <span class="title">Job Post</span>
+      </div>
+      <!-- Funfact Start -->
+
+      <!-- Funfact Start -->
+      <div class="funfact col-md-3 col-sm-6 col-12">
+        <span class="counter">1741</span>
+        <span class="title">Members</span>
+      </div>
+      <!-- Funfact Start -->
+
+      <!-- Funfact Start -->
+      <div class="funfact col-md-3 col-sm-6 col-12">
+        <span class="counter">1204</span>
+        <span class="title">Resume</span>
+      </div>
+      <!-- Funfact Start -->
+
+      <!-- Funfact Start -->
+      <div class="funfact col-md-3 col-sm-6 col-12">
+        <span class="counter">142</span>
+        <span class="title">Company</span>
+      </div>
+      <!-- Funfact Start -->
+
+    </div>
+  </div>
+</div>
+<!-- Funfact Section End -->
+
+
+<!-- Testimonial Section Start -->
+<div class="section section-padding bg-parallax" data-bg-image="assets/images/bg/bg-2.jpg" data-overlay="65">
+  <div class="container">
+
+    <!-- Testimonial Slider Start -->
+    <div class="testimonial-slider row">
+
+      <!-- Testimonial Start -->
+      <div class="col">
+        <div class="testimonial text-center text-white">
+          <p>啊吧啊吧啊吧...</p>
+          <!--                        <img src="assets/images/authors/author-1.jpg" alt="">-->
+          <h6 class="name">Sharon Harper</h6>
+          <span class="title">Marketer of Hastech</span>
+        </div>
+      </div>
+      <!-- Testimonial End -->
+
+      <!-- Testimonial Start -->
+      <div class="col">
+        <div class="testimonial text-center text-white">
+          <p>嘿嘿嘿</p>
+          <!--                        <img src="assets/images/authors/author-2.jpg" alt="">-->
+          <h6 class="name">Harold McCoy</h6>
+          <span class="title">CEO of Hastech</span>
+        </div>
+      </div>
+      <!-- Testimonial End -->
+
+      <!-- Testimonial Start -->
+      <div class="col">
+        <div class="testimonial text-center text-white">
+          <p>西巴！！</p>
+          <!--                        <img src="assets/images/authors/author-3.jpg" alt="">-->
+          <h6 class="name">Ronald Wright</h6>
+          <span class="title">Admin of Hastech</span>
+        </div>
+      </div>
+      <!-- Testimonial End -->
+    </div>
+  </div>
+</div>
+<!-- Testimonial Section End -->
+
+<!-- Footer Bottom Section Start -->
+<div class="footer-bottom-section section">
+  <div class="container">
+    <div class="row">
+
+      <!-- Footer Copyright Start -->
+      <div class="col-12">
+        <p class="footer-copyright text-center">Copyright &copy; 2019.Company name All rights reserved.LEE</p>
+      </div>
+      <!-- Footer Copyright End -->
+
+    </div>
+  </div>
+</div>
+<!-- Footer Bottom Section End -->
+
+<!-- JS
+============================================ -->
+
+<!-- Google Map API JS -->
+<script src='https://ditu.google.cn/maps/api/js?key=AIzaSyC3nDHy1dARR-Pa_2jjPCjvsOR4bcILYsM'></script>
+
+<!-- Vendors JS -->
+<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+
+<!-- Plugins JS -->
+<script src="assets/js/plugins/slick.min.js"></script>
+<script src="assets/js/plugins/jquery.waypoints.min.js"></script>
+<script src="assets/js/plugins/jquery.counterup.min.js"></script>
+<script src="assets/js/plugins/jquery.parallax.js"></script>
+<script src="static/assets/js/plugins/jquery.ajaxchimp.min.js"></script>
+<script src="static/assets/js/plugins/ion.rangeSlider.min.js"></script>
+<script src="static/assets/js/plugins/jquery.scrollUp.min.js"></script>
+
+<!-- Main Activation JS -->
+<script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+<!--<!DOCTYPE html>-->
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <base href="../static/">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/flaticon.css">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- markdown编辑器-->
+    <link rel="stylesheet" href="libs/editormd/css/editormd.css" />
+
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+
+            <!-- Header Logo Start -->
+            <div class="col">
+                <div class="header-logo">
+                    <a href="index.html"><img src="assets/images/logo/logo-light.png" alt="Site Logo"></a>
+                </div>
+            </div><!-- Header Logo End -->
+
+            <!-- Offcanvas Toggle Start -->
+            <div class="col-auto d-lg-none d-flex align-items-center">
+                <button class="offcanvas-toggle">
+                    <span></span>
+                </button>
+            </div>
+
+            <nav id="main-menu" class="main-menu col-lg-auto order-lg-2">
+                <ul>
+                    <li class="has-children"><a href="index.html">展示</a></li>
+                    <li><a>发帖</a>
+                        <ul class="sub-menu">
+                            <li><a href="create-job.html">发帖儿</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">广场</a></li>
+                    <li><a href="#">开发工程师</a>
+                        <ul class="sub-menu">
+                            <li><a href="about-us.html">关于我</a></li>
+                            <li><a href="pricing.html">支持一下</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="job-list.html">user 的主页</a>
+                        <ul class="sub-menu">
+                            <li><a href="job-list.html">我的文章</a></li>
+                            <li><a href="job-list.html">我的点赞</a></li>
+                            <li><a href="job-list.html">我的收藏</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <div class="offcanvas-overlay"></div>
+
+
+    <div class="loginSignupModal modal fade" id="loginSignupModal" tabindex="-1" role="dialog" aria-labelledby="loginSignupModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <ul class="loginSignupNav nav">
+                        <li><a class="nav-link active" data-toggle="tab" href="#login">Login</a></li>
+                        <li><a class="nav-link" data-toggle="tab" href="#signup">Sign up</a></li>
+                    </ul>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="login">
+                            <form>
+                                <div class="row mb-n3">
+                                    <div class="col-12 mb-3"><input type="email" placeholder="Email"></div>
+                                    <div class="col-12 mb-3"><input type="password" placeholder="Password"></div>
+                                    <div class="col-12 mb-3">
+                                        <div class="row justify-content-between mb-n2">
+                                            <div class="col-auto mb-2">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="remember-me" id="remember-me" value="checkedValue" class="custom-control-input">
+                                                    <label class="custom-control-label" for="remember-me">Remember me</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto mb-2"><a href="#">Forgot Password?</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3"><input class="btn btn-primary w-100" type="submit" value="Login"></div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col text-center">
+                                        <p class="text-muted">Or Login With</p>
+                                        <div class="login-reg-social">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="signup">
+                            <form>
+                                <div class="row mb-n3">
+                                    <div class="col-12 mb-3"><input type="text" placeholder="Your Name"></div>
+                                    <div class="col-12 mb-3"><input type="email" placeholder="Your Email Address"></div>
+                                    <div class="col-12 mb-3"><input type="password" placeholder="Choose a Password"></div>
+                                    <div class="col-12 mb-3"><input class="btn btn-primary w-100" type="submit" value="Sign Up"></div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col text-center">
+                                        <p class="text-muted">Or Register With</p>
+                                        <div class="login-reg-social">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Heading Section Start -->
+    <div class="page-heading-section section bg-parallax" data-bg-image="assets/images/bg/bg-1.jpg" data-overlay="50">
+        <div class="container">
+            <div class="page-heading-content text-center">
+                <h3 class="title">创建 一个 idea</h3>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+<!--                    <li class="breadcrumb-item"><a href="company-list.html">Companies</a></li>-->
+                    <li class="breadcrumb-item active">Create Show</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- Page Heading Section End -->
+
+    <!-- Create Job Start -->
+    <div class="section section-padding">
+            <div class="row">
+                <div class="create-job-form col-lg-11 mx-auto">
+                    <form action="#">
+                        <div class="row mb-n3">
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="jobTypee">文章类型</label>
+                                <select id="jobTypee">
+                                    <option value="type1">原创</option>
+                                    <option value="type2">转载</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-12 mb-3 ">
+                                <label for="jobTitlee">文章标题</label>
+                                <input type="text" id="jobTitlee" placeholder="title">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="layout"> </label>
+                        </div>
+                        <div id="layout">
+                            <div id="md-content" style="z-index: 1 !important;">
+                                <textarea placeholder="context" style="display:none;"># 开始你的创作</textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <button type="submit" class="btn btn-primary px-5">发表</button>
+                            <label>根据国家法律，禁止违法行为</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+    <!-- Create Job End -->
+
+    <!-- Footer Top Section End -->
+
+    <!-- Footer Bottom Section Start -->
+    <div class="footer-bottom-section section">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Copyright Start -->
+                <div class="col-12">
+                    <p class="footer-copyright text-center">Copyright &copy; 2019.Company name All rights reserved.</p>
+                </div>
+                <!-- Footer Copyright End -->
+            </div>
+        </div>
+    </div>
+    <!-- Footer Bottom Section End -->
+
+    <!-- JS
+============================================ -->
+
+    <!-- Google Map API JS -->
+    <script src='https://ditu.google.cn/maps/api/js?key=AIzaSyC3nDHy1dARR-Pa_2jjPCjvsOR4bcILYsM'></script>
+
+    <!-- Vendors JS -->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="assets/js/plugins/jquery.waypoints.min.js"></script>
+    <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+    <script src="assets/js/plugins/jquery.parallax.js"></script>
+    <script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/plugins/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/plugins/jquery.scrollUp.min.js"></script>
+
+    <!-- Main Activation JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- 引入markdown脚本-->
+    <script src="libs/editormd/editormd.min.js"></script>
+<!--    <script src="libs/editormd/editormd.amd.js"></script>-->
+
+    <script type="text/javascript">
+        var testEditor;
+
+        $(function() {
+            testEditor = editormd("md-content", {
+                htmlDecode  :   "style,script,iframe",
+                width   : "100%",
+                height  : 1000,
+                tex :   true,
+                previewCodeHighlight : true,
+                flowChart   :   true,
+                syncScrolling : "single",
+                saveHTMLToTextarea  : true,
+                path    : "libs/editormd/lib/"
+            });
+        });
+    </script>
+
+</body>
+
+</html>
